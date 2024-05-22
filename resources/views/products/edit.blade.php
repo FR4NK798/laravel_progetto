@@ -1,3 +1,5 @@
+{{-- @dd($product); --}}
+
 @include('includes.init')
 @include('includes.nav')
 <h1>Products update</h1>
@@ -5,16 +7,16 @@
     @method('PUT')
     @csrf
     <div class="mb-3">
-        <label for="title" class="form-label">Name</label>
-        <input type="text" class="form-control" id="title" name="title" value="{{ $product->name }}">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="{{ $product->name }}">
     </div>
     <div class="mb-3">
         <label for="description" class="form-label">Description</label>
         <input type="text" class="form-control" id="description" name="description" value="{{ $product->description }}">
     </div>
     <div class="mb-3">
-        <label for="author" class="form-label">Brand</label>
-        <input type="text" class="form-control" id="author" name="author" value="{{ $product->author }}">
+        <label for="brand" class="form-label">Brand</label>
+        <input type="text" class="form-control" id="brand" name="brand" value="{{ $product->brand }}">
     </div>
     <div class="mb-3">
         <label for="price" class="form-label">Price</label>
