@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">Products Store</a>
+        <a class="navbar-brand" href="{{ route('products.index') }}">Products Store</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,8 +23,8 @@
                 @auth
                     {{-- se utente loggato --}}
                     <li class="nav-item">
-                        <a href="{{ route('dashboard') }}" class="nav-link">
-                            Dashboard
+                        <a href="{{ route('products.index') }}" class="nav-link">
+                            Products
                         </a>
                     </li>
                 @endauth
